@@ -176,7 +176,7 @@ cig_butts_dataset = dataset_base.copy({
   'name': 'Immersive Limit - Cigarette Butts',
   'train_info': '/content/drive/MyDrive/Copy of cig_butts.zip (Unzipped Files)/cig_butts/train/coco_annotations.json',
   'train_images': '/content/drive/MyDrive/Copy of cig_butts.zip (Unzipped Files)/cig_butts/train/images/',
-  'valid_info': '<path to dataset>/cig_butts/val/coco_annotations.json',
+  'valid_info': '/content/drive/MyDrive/Copy of cig_butts.zip (Unzipped Files)/cig_butts/val/coco_annotations.json',
   'valid_images': '/content/drive/MyDrive/Copy of cig_butts.zip (Unzipped Files)/cig_butts/val/images/',
   'class_names': ('cig_butt'),
   'label_map': { 1:  1 }
@@ -665,8 +665,8 @@ yolact_base_config = coco_base_config.copy({
     'name': 'yolact_base',
 
     # Dataset stuff
-    'dataset': coco2017_dataset,
-    'num_classes': len(coco2017_dataset.class_names) + 1,
+    'dataset': cig_butts_dataset,
+    'num_classes': len(cig_butts_dataset.class_names) + 1,
 
     # Image Size
     'max_size': 550,
